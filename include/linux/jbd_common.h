@@ -1,6 +1,8 @@
 #ifndef _LINUX_JBD_STATE_H
 #define _LINUX_JBD_STATE_H
 
+#include <linux/bit_spinlock.h>
+
 enum jbd_state_bits {
 	BH_JBD			/* Has an attached ext3 journal_head */
 	  = BH_PrivateStart,
